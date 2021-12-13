@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/PRODUCT"
+        android:layout_width="138dp"
+        android:layout_height="34dp"
+        android:text="Название" />
+
+    <TextView
+        android:id="@+id/DATE"
+        android:layout_width="122dp"
+        android:layout_height="36dp"
+        android:text="DATE"
+        app:layout_constraintTop_toBottomOf="@+id/PRODUCT"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/COL"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:text="COL"
+        app:layout_constraintTop_toBottomOf="@+id/DATE"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/COST"
+        android:layout_width="125dp"
+        android:layout_height="29dp"
+        android:text="COST"
+        app:layout_constraintTop_toBottomOf="@+id/COL"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
