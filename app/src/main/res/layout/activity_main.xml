@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
     <EditText
@@ -61,10 +62,21 @@
         android:id="@+id/add_note"
         android:layout_width="173dp"
         android:layout_height="99dp"
-        android:text="save"
         android:onClick="addNote"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="316dp" />
+        android:text="save"
+        app:layout_constraintTop_toBottomOf="@+id/category"
+        tools:layout_editor_absoluteX="90dp"
+         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/add_note"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
