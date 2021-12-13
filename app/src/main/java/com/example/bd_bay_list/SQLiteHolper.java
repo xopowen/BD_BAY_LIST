@@ -37,7 +37,7 @@ public class SQLiteHolper  extends SQLiteOpenHelper {
                 COLUMN_TYPE + " TEXT, " +
                 COLUMN_COST + " TEXT not null, " +
                 COLUMN_CATEGORY + " TEXT not null default \"продукт\"," +
-                COLUMN_DATE + "TEXT DEFAULT " + today + ")";
+                COLUMN_DATE + "TEXT DEFAULT " +"(" + today +")" + ")";
         sqLiteDatabase.execSQL(createQuery);
     }
 

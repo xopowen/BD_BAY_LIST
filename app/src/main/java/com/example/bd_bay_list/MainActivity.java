@@ -100,7 +100,11 @@ public class MainActivity extends AppCompatActivity {
 
         //запрос  к бд
         cursor  = database.rawQuery("SELECT * FROM " + SQLiteHolper.DATABASE_TABLE, null);
-        setInitialData(cursor);
+        if(cursor.getCount()>0){
+            setInitialData(cursor);
+        }
+
+
 
         cursor.close();
 
